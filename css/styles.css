@@ -1,0 +1,83 @@
+/*
+ * Logan Boydstun Design Web Portfolio Stylesheet
+ *
+ * This stylesheet is loaded when Atom starts up and is reloaded automatically
+ * when it is changed and saved.
+ *
+ * Add your own CSS or Less to fully customize Atom.
+ * If you are unfamiliar with Less, you can read more about it here:
+ * http://lesscss.org
+ *508562; 67CF8B; FA9265; 3482AD; 57BFFA
+ */
+
+
+body {
+  background-color: #ffffff;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px; /* Sets the font size to 16px */
+  font-weight: 200; /* Sets the font weight to 300 */
+  line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
+  color: #4a4a4a;
+}
+
+h1, h2, h3, h4 {
+  line-height: 1.4;
+}
+
+h1 {
+  font-size: 2.75em;
+  font-weight: 400;
+}
+
+h2 {
+  font-size: 2.25em;
+  font-weight: 300;
+}
+
+img {
+  width: 100%;
+}
+
+li {
+  font-size: 2.00em;
+  font-weight: 300;
+}
+
+a {
+  color: #FA9265;
+  text-decoration: none; /* No underlining */
+}
+a:hover {
+  color: #cc6540;
+  text-decoration: underline; /* Underlining when hovering over a link */
+}
+
+a:visited { /* visited link */
+  color: #cc6540;
+}
+a:active { /* selected link */
+  color: #3482AD;
+}
+
+.button {
+  display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+  background-color: #FA9265;
+  color: #ffffff; /* needed to override the default link color */
+  font-weight: 400;
+  padding: 10px;
+  border-radius: 3px;
+  border-bottom: 2px solid #994c30; /* width of the border, type, color */
+  transition: 0.2s opacity;
+}
+
+#work {
+background-color: white;
+}
+
+#hero {
+background-color: white;
+}
+
+#contact {
+background-color: white;
+}
