@@ -17,7 +17,6 @@ body {
   font-size: 16px; /* Sets the font size to 16px */
   font-weight: 200; /* Sets the font weight to 300 */
   line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
-  color: #4a4a4a;
 }
 
 h1, h2, h3, h4 {
@@ -44,9 +43,10 @@ li {
 }
 
 a {
-  color: #FA9265;
+  color: color: #000000;
   text-decoration: none; /* No underlining */
 }
+
 a:hover {
   color: #cc6540;
   text-decoration: underline; /* Underlining when hovering over a link */
@@ -70,14 +70,65 @@ a:active { /* selected link */
   transition: 0.2s opacity;
 }
 
+header {
+  background-color: #ffffff;
+  padding: 10px;
+  margin: 10px;
+  border: 3px solid #FA9265;
+  text-align: center;
+  position: fixed;
+  width: 100%;
+  box-shadow:         0px 4px 3px 0px rgba(50, 50, 50, 0.5);
+}
+
+selector {
+  margin: 0 auto; /* No spacing to top and bottom and auto spacing to left and right */
+}
+
 #work {
 background-color: white;
 }
 
 #hero {
-background-color: white;
+background-color: #57BFFA;
+padding: 20px 0;
+display: inline-block;
+width: 100%;
+padding-top: 485px;
 }
 
 #contact {
 background-color: white;
+}
+
+/* Layout styling */
+.container {
+  padding: 0 15px;
+}
+
+nav > ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav > ul > li {
+  display: inline-block;
+}
+
+nav > ul > li > a {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+nav > ul > li > a:hover {
+  color: #cc6540;
+}
+
+.row {
+  margin: 25px 0; /* 25px top and bottom, 0 left and right */
+}
+
+#hero h1 {
+  text-align: center; /* Centers text */
 }
