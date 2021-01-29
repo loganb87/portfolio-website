@@ -10,6 +10,9 @@
  *508562; 67CF8B; FA9265; 3482AD; 57BFFA
  */
 
+ * {
+   box-sizing: border-box;
+ }
 
 body {
   background-color: #ffffff;
