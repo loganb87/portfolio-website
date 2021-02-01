@@ -133,7 +133,11 @@ nav > ul > li > a:hover {
 [class*="col-"] {
   float: left;
 }
-
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
@@ -153,6 +157,12 @@ nav {
   .col-md-6 {
   width: 50%;
   }
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
 }
 /* ==============================
 Large devices (1024px or larger)
