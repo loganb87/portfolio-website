@@ -103,6 +103,10 @@ background-color: white;
   padding: 0 15px;
 }
 
+.logo-image {
+  width: 60px
+}
+
 nav > ul {
   list-style-type: none;
   padding: 0;
