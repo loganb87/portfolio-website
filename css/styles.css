@@ -69,7 +69,7 @@ a:active { /* selected link */
 
 header {
   background-color: #ffffff;
-  padding: 10%;
+  padding: 10px;
   margin: 10%;
   border: 3px solid #FA9265;
   text-align: center;
