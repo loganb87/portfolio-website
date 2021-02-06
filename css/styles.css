@@ -35,45 +35,46 @@ img {
 }
 
 li {
-  font-size: 1.00em;
+  font-size: 2.00em;
   font-weight: 300;
 }
 
 a {
+  color: color: #000000;
   text-decoration: none; /* No underlining */
 }
 
 a:hover {
-  color: #67CF8B;
+  color: #cc6540;
   text-decoration: underline; /* Underlining when hovering over a link */
 }
 
 a:visited { /* visited link */
-  color: #67CF8B;
+  color: #cc6540;
 }
 a:active { /* selected link */
-  color: #508562;
+  color: #3482AD;
 }
 
 .button {
   display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
-  background-color: #508562;
+  background-color: #FA9265;
   color: #ffffff; /* needed to override the default link color */
   font-weight: 400;
   padding: 10px;
   border-radius: 3px;
-  border-bottom: 2px solid #57BFFA; /* width of the border, type, color */
+  border-bottom: 2px solid #994c30; /* width of the border, type, color */
   transition: 0.2s opacity;
 }
 
 header {
   background-color: #ffffff;
-  padding: 6px;
-  margin: 4%;
-  border: 3px solid #508562;
+  padding: 10px;
+  margin: 10%;
+  border: 3px solid #FA9265;
   text-align: center;
   position: fixed;
-  width: 90%;
+  width: 80%;
   box-shadow:         0px 4px 3px 0px rgba(50, 50, 50, 0.5);
 }
 
@@ -86,11 +87,11 @@ background-color: white;
 }
 
 #hero {
-background-color: #FA9265;
+background-color: #57BFFA;
 padding: 20px 0;
 display: inline-block;
 width: 100%;
-padding-top: 120px;
+padding-top: 350px;
 }
 
 #contact {
@@ -99,11 +100,7 @@ background-color: white;
 
 /* Layout styling */
 .container {
-  padding: 0;
-}
-
-.social-icons {
-  width: 40px;
+  padding: 0 15px;
 }
 
 .logo-image {
@@ -113,7 +110,6 @@ background-color: white;
 nav > ul {
   list-style-type: none;
   padding: 0;
-  margin: 1%;
 }
 
 nav > ul > li {
@@ -121,7 +117,7 @@ nav > ul > li {
 }
 
 nav > ul > li > a {
-  padding: 0 5px;
+  padding: 0 15px;
   text-transform: uppercase;
   font-weight: 700;
 }
@@ -131,19 +127,11 @@ nav > ul > li > a:hover {
 }
 
 .row {
-  margin: 20px 0; /* 25px top and bottom, 0 left and right */
+  margin: 25px 0; /* 25px top and bottom, 0 left and right */
 }
 
 #hero h1 {
   text-align: center; /* Centers text */
-}
-
-#hero h2 {
-  text-align: center; /* Centers text */
-}
-
-#hero h3 {
-  color: #000000;
 }
 
 [class*="col-"] {
@@ -170,11 +158,9 @@ nav {
 #hero span {
     display: block;
   }
-
   .col-md-6 {
   width: 50%;
   }
-
   .row::after {
     content: "";
     clear: both;
