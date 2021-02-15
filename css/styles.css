@@ -21,7 +21,7 @@ h1, h2, h3, h4 {
 }
 
 h1 {
-  font-size: 2.75em;
+  font-size: 2.5em;
   font-weight: 400;
 }
 
@@ -30,12 +30,17 @@ h2 {
   font-weight: 300;
 }
 
+h3 {
+  font-size: 1.5em;
+  font-weight: 200;
+}
+
 img {
   width: 100%;
 }
 
 li {
-  font-size: 2.00em;
+  font-size: 1.00em;
   font-weight: 300;
 }
 
@@ -52,6 +57,7 @@ a:hover {
 a:visited { /* visited link */
   color: #cc6540;
 }
+
 a:active { /* selected link */
   color: #3482AD;
 }
@@ -69,8 +75,8 @@ a:active { /* selected link */
 
 header {
   background-color: #ffffff;
-  padding: 10px;
-  margin: 10%;
+  padding: 5px;
+  margin: 2%;
   border: 3px solid #FA9265;
   text-align: center;
   position: fixed;
@@ -87,11 +93,11 @@ background-color: white;
 }
 
 #hero {
-background-color: #57BFFA;
-padding: 20px 0;
+background-color: #FA9265;
+padding: 10px 10;
 display: inline-block;
 width: 100%;
-padding-top: 350px;
+padding-top: 100px;
 }
 
 #contact {
@@ -99,8 +105,13 @@ background-color: white;
 }
 
 /* Layout styling */
+
 .container {
-  padding: 0 15px;
+  padding: 1 1px;
+}
+
+.container1 {
+  padding: 1 1px;
 }
 
 .logo-image {
@@ -110,6 +121,7 @@ background-color: white;
 nav > ul {
   list-style-type: none;
   padding: 0;
+  margin: 0px;
 }
 
 nav > ul > li {
@@ -117,9 +129,9 @@ nav > ul > li {
 }
 
 nav > ul > li > a {
-  padding: 0 15px;
+  padding: 5px;
   text-transform: uppercase;
-  font-weight: 700;
+  font-weight: 600;
 }
 
 nav > ul > li > a:hover {
@@ -134,44 +146,145 @@ nav > ul > li > a:hover {
   text-align: center; /* Centers text */
 }
 
-[class*="col-"] {
+h3 {
+text-align: center;
+}
+
+#social-icons #container1 {
+  text-align: center;
+  width: 100px;
+  }
+#social-icons #container1 ul {
   float: left;
-}
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
+  }
+#social-icons #container1 ul li {
+  float: left;
+  padding-left: 10px;
+  list-style-type: none;
+  }
+
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
 @media only screen and (min-width: 640px) {
 header {
   text-align: unset;
-  padding: 20px 0 13px;
+  padding: 10px 10px 10px;
+  background-color: #ffffff;
+  padding: 5px;
+  margin: 2%;
+  border: 3px solid #FA9265;
+  text-align: center;
+  position: fixed;
+  width: 80%;
+  box-shadow:         0px 4px 3px 0px rgba(50, 50, 50, 0.5);
   }
 nav {
-  width:auto;
+  width: auto;
   float: right;
-  margin-top: 4px;
+  margin-top: 0px;
   }
 #hero span {
     display: block;
+    text-align: center;
+  }
+#hero {
+  background-color: #FA9265;
+  padding: 10px 10;
+  display: inline-block;
+  width: 100%;
+  padding-top: 125px;
+  }
+h1 {
+  margin: 5px;
+  font-size: 2.75em;
+  font-weight: 400;
+  }
+h2 {
+  margin: 8px;
+  margin-top: 14px;
+  text-align: center;
+  }
+header {
+  width: 96%;
+  margin: 1%;
+  }
+li {
+    font-size: 2.00em;
+    font-weight: 300;
+  }
+nav > ul > li > a {
+  padding: 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  }
+.logo-image {
+  width: 8%;
+  margin: 0;
+  position: relative;
+  height: auto;
+  }
+.container {
+  padding: 0;
+  }
+#social-icons #container1 {
+  text-align: center;
+  width: 150px;
+  }
+#social-icons #container1 ul {
+  float: left;
+  }
+#social-icons #container1 ul li {
+  float: left;
+  padding-left: 10px;
+  list-style-type: none;
+  }
+p {
+  display: inline-block;
+  }
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   }
   .col-md-6 {
   width: 50%;
   }
-  .row::after {
-    content: "";
-    clear: both;
-    display: table;
+  [class*="col-"] {
+  float: left;
   }
-
+  .row::after {
+  content: "";
+  clear: both;
+  display: table;
+  }
 }
 /* ==============================
 Large devices (1024px or larger)
 ================================= */
 @media only screen and (min-width: 1024px) {
+  header {
+    text-align: unset;
+    padding: 20px 0 13px;
+    }
+  nav {
+    width:auto;
+    float: right;
+    margin-top: 4px;
+    }
+  #hero span {
+      display: block;
+      text-align: center;
+      padding-top: 0px
+    }
+    .col-md-6 {
+    width: 50%;
+    }
+    .row::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
 }
 /* ==============================
 X-large devices (1440px or larger)
