@@ -4,290 +4,309 @@
  *508562; 67CF8B; FA9265; 3482AD; 57BFFA
  */
 
- * {
-   box-sizing: border-box;
- }
-
-body {
-  background-color: #ffffff;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 16px; /* Sets the font size to 16px */
-  font-weight: 200; /* Sets the font weight to 300 */
-  line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
+* {
+	box-sizing: border-box;
 }
 
-h1, h2, h3, h4 {
-  line-height: 1.4;
+body {
+	background-color: #ffffff;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 16px; /* Sets the font size to 16px */
+	font-weight: 200; /* Sets the font weight to 300 */
+	line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
+}
+
+h1,
+h2,
+h3,
+h4 {
+	line-height: 1.4;
 }
 
 h1 {
-  font-size: 2.5em;
-  font-weight: 400;
+	font-size: 2.5em;
+	font-weight: 400;
 }
 
 h2 {
-  font-size: 2.25em;
-  font-weight: 300;
+	font-size: 2.25em;
+	font-weight: 300;
 }
 
 h3 {
-  font-size: 1.5em;
-  font-weight: 200;
+	font-size: 1.5em;
+	font-weight: 200;
 }
 
 img {
-  width: 100%;
+	width: 100%;
 }
 
 li {
-  font-size: 1.00em;
-  font-weight: 300;
+	font-size: 1em;
+	font-weight: 300;
 }
 
 a {
-  color: color: #000000;
-  text-decoration: none; /* No underlining */
+	color: #000000;
+	text-decoration: none; /* No underlining */
 }
 
 a:hover {
-  color: #cc6540;
-  text-decoration: underline; /* Underlining when hovering over a link */
+	color: #cc6540;
 }
 
-a:visited { /* visited link */
-  color: #cc6540;
+a:visited {
+	/* visited link */
+	color: #cc6540;
 }
 
-a:active { /* selected link */
-  color: #3482AD;
+a:active {
+	/* selected link */
+	color: #3482ad;
 }
 
 .button {
-  display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
-  background-color: #FA9265;
-  color: #ffffff; /* needed to override the default link color */
-  font-weight: 400;
-  padding: 10px;
-  border-radius: 3px;
-  border-bottom: 2px solid #994c30; /* width of the border, type, color */
-  transition: 0.2s opacity;
+	display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+	background-color: #fa9265;
+	color: #ffffff; /* needed to override the default link color */
+	font-weight: 400;
+	text-decoration: none;
+	padding: 10px;
+	border-radius: 3px;
+	border-bottom: 2px solid #994c30; /* width of the border, type, color */
+	transition: 0.2s opacity;
+	transition-property: opacity;
+}
+.button:hover {
+	opacity: .8;
 }
 
 header {
-  background-color: #ffffff;
-  padding: 5px;
-  margin: 2%;
-  border: 3px solid #FA9265;
-  text-align: center;
-  position: fixed;
-  width: 80%;
-  box-shadow:         0px 4px 3px 0px rgba(50, 50, 50, 0.5);
+	background-color: #ffffff;
+	/* padding: 5px;
+	margin: 2%; */
+	border: 3px solid #fa9265;
+	text-align: center;
+	position: fixed;
+	width: 100%;
+	box-shadow: 0px 4px 3px 0px rgba(50, 50, 50, 0.5);
 }
 
 selector {
-  margin: 0 auto; /* No spacing to top and bottom and auto spacing to left and right */
+	margin: 0 auto; /* No spacing to top and bottom and auto spacing to left and right */
 }
 
 #work {
-background-color: white;
+	background-color: white;
 }
 
 #hero {
-background-color: #FA9265;
-padding: 10px;
-display: inline-block;
-width: 100%;
-padding-top: 100px;
+	background-color: #fa9265;
+	padding: 10px 10;
+	display: inline-block;
+	width: 100%;
+	padding-top: 100px;
 }
 
 #contact {
-background-color: white;
+	background-color: white;
 }
 
 /* Layout styling */
 
-.container {
-  padding: 1 1px;
+.maxWidthWrapper {
+	max-width: 1200px;
+	margin: 0 auto;
 }
 
-.container1 {
-  padding: 1 1px;
-}
-
-.logo-image {
-  width: 60px
+.logoWrapper img {
+	width: 85px;
+	vertical-align: middle;
 }
 
 nav > ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 0px;
+	list-style-type: none;
+	padding: 0;
+	margin: 0px;
 }
 
 nav > ul > li {
-  display: inline-block;
+	display: inline-block;
 }
 
 nav > ul > li > a {
-  padding: 5px;
-  text-transform: uppercase;
-  font-weight: 600;
+	padding: 5px;
+	text-transform: uppercase;
+	font-weight: 600;
 }
 
 nav > ul > li > a:hover {
-  color: #cc6540;
+	color: #cc6540;
 }
 
 .row {
-  margin: 25px 0; /* 25px top and bottom, 0 left and right */
+	margin: 25px 0; /* 25px top and bottom, 0 left and right */
 }
 
 #hero h1 {
-  text-align: center; /* Centers text */
+	text-align: center; /* Centers text */
 }
 
 h3 {
-text-align: center;
+	text-align: center;
+}
+h2 {
+	text-align: center;
 }
 
-#social-icons #container1 {
-  text-align: center;
-  width: 100px;
-  }
-#social-icons #container1 ul {
-  float: left;
-  }
-#social-icons #container1 ul li {
-  float: left;
-  padding-left: 10px;
-  list-style-type: none;
-  }
+.animation {
+	width: 100%;
+	max-width: 100%;
+	height: auto;
+}
+
+#social-icons svg {
+	width: 30px;
+	height: 30px;
+}
+
+#social-icons {
+	display: flex;
+	justify-content: center;
+}
+
+#social-icons div {
+	padding-left: 10px;
+}
+
+/* Animation Graphic styling */
+
+@keyframes color-change {
+  0% {fill: #edc655;}
+  50% {fill: #fcffad;}
+  100% {fill: #f76414;}
+}
+
+.sun {
+  animation: 4s color-change infinite alternate linear;
+}
+
+@keyframes cloud-move {
+  from {transform: translate(0,50px);}
+  to {transform: translate(200px,50px);}
+}
+
+.cloud-front {
+  animation: 30s cloud-move infinite alternate linear;
+}
+
+@keyframes cloud-move-reverse {
+  from {transform: translate(446px,48px);}
+  to {transform: translate(100px, 48px);}
+}
+
+.cloud-back {
+  animation: 34s cloud-move-reverse infinite alternate linear;
+}
+
+svg.berlin-illustration {
+	max-width: 100%;
+}
 
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
 @media only screen and (min-width: 640px) {
-header {
-  text-align: unset;
-  padding: 10px 10px 10px;
-  background-color: #ffffff;
-  padding: 5px;
-  margin: 2%;
-  border: 3px solid #FA9265;
-  text-align: center;
-  position: fixed;
-  width: 80%;
-  box-shadow:         0px 4px 3px 0px rgba(50, 50, 50, 0.5);
-  }
-nav {
-  width: auto;
-  float: right;
-  margin-top: 0px;
-  }
-#hero span {
-    display: block;
-    text-align: center;
-  }
-#hero {
-  background-color: #FA9265;
-  padding: 10px 10;
-  display: inline-block;
-  width: 100%;
-  padding-top: 125px;
-  }
-h1 {
-  margin: 5px;
-  font-size: 2.75em;
-  font-weight: 400;
-  }
-h2 {
-  margin: 8px;
-  margin-top: 14px;
-  text-align: center;
-  }
-header {
-  width: 96%;
-  margin: 1%;
-  }
-li {
-    font-size: 2.00em;
-    font-weight: 300;
-  }
-nav > ul > li > a {
-  padding: 15px;
-  text-transform: uppercase;
-  font-weight: 700;
-  }
-.logo-image {
-  width: 8%;
-  margin: 0;
-  position: relative;
-  height: auto;
-  }
-.container {
-  padding: 0;
-  }
-#social-icons #container1 {
-  text-align: center;
-  width: 150px;
-  }
-#social-icons #container1 ul {
-  float: left;
-  }
-#social-icons #container1 ul li {
-  float: left;
-  padding-left: 10px;
-  list-style-type: none;
-  }
-p {
-  display: inline-block;
-  }
-.center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  }
-  .col-md-6 {
-  width: 50%;
-  }
-  [class*="col-"] {
-  float: left;
-  }
-  .row::after {
-  content: "";
-  clear: both;
-  display: table;
-  }
+	header {
+		text-align: unset;
+		/* padding: 10px 10px 10px; */
+		background-color: #ffffff;
+		/* padding: 5px;
+		margin: 2%; */
+		border: 3px solid #fa9265;
+		position: fixed;
+		width: 100%;
+		box-shadow: 0px 4px 3px 0px rgba(50, 50, 50, 0.5);
+	}
+	nav {
+		width: auto;
+		float: right;
+		margin-top: 0px;
+	}
+	#hero span {
+		display: block;
+		text-align: center;
+	}
+	#hero {
+		background-color: #fa9265;
+		padding: 10px 10;
+		display: inline-block;
+		width: 100%;
+		padding-top: 125px;
+	}
+	h1 {
+		margin: 5px;
+		font-size: 2.75em;
+		font-weight: 400;
+	}
+	h2 {
+		margin: 8px;
+		margin-top: 14px;
+		text-align: center;
+	}
+	/* header {
+		width: 96%;
+		margin: 1%;
+	} */
+	li {
+		font-size: 2em;
+		font-weight: 300;
+	}
+	nav > ul > li > a {
+		padding: 15px;
+		text-transform: uppercase;
+		font-weight: 700;
+	}
+	.logoWrapper {
+		padding: 5px;
+		display: inline-block;
+	}
+
+	.logoWrapper img {
+		width: 100px;
+		vertical-align: middle;
+	}
+
+	.container {
+		padding: 0;
+	}
+
+	p {
+		display: inline-block;
+	}
+	.center {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.col-md-6 {
+		width: 50%;
+	}
+	[class*='col-'] {
+		float: left;
+		padding: 10px;
+	}
+	.row: after {
+		content: '';
+		clear: both;
+		display: table;
+	}
 }
 /* ==============================
 Large devices (1024px or larger)
 ================================= */
 @media only screen and (min-width: 1024px) {
-  header {
-    text-align: unset;
-    padding: 20px 0 13px;
-    }
-  nav {
-    width:auto;
-    float: right;
-    margin-top: 4px;
-    }
-  #hero span {
-      display: block;
-      text-align: center;
-      padding-top: 0px
-    }
-    .col-md-6 {
-    width: 50%;
-    }
-    .row::after {
-      content: "";
-      clear: both;
-      display: table;
-    }
-}
-/* ==============================
-X-large devices (1440px or larger)
-================================= */
-@media only screen and (min-width: 1440px) {
-}
+	header {
+		text-align: unset;
+		/* padding: 20px 0 13px; */
