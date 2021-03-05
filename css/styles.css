@@ -56,14 +56,9 @@ a:hover {
 	color: #cc6540;
 }
 
-a:visited {
-	/* visited link */
-	color: #cc6540;
-}
-
 a:active {
 	/* selected link */
-	color: #3482ad;
+	color: #000000;
 }
 
 .button {
@@ -76,12 +71,36 @@ a:active {
 	border-radius: 3px;
 	border-bottom: 2px solid #994c30; /* width of the border, type, color */
 	transition: 0.2s opacity;
-	transition-property: opacity;
 }
 .button:hover {
 	opacity: .8;
 }
-
+.emailbutton {
+	display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+	background-color: #fa9265;
+	color: #ffffff; /* needed to override the default link color */
+	font-weight: 400;
+	text-align: center;
+	padding: 10px;
+	border-radius: 3px;
+	border-bottom: 2px solid #994c30; /* width of the border, type, color */
+	transition: 0.2s opacity;
+	margin-bottom: 10px;
+	margin: auto;
+}
+.resumebutton {
+	margin: auto;
+	display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+	background-color: #508562;
+	color: #ffffff; /* needed to override the default link color */
+	font-weight: 400;
+	text-align: center;
+	padding: 10px;
+	border-radius: 3px;
+	border-bottom: 2px solid #994c30; /* width of the border, type, color */
+	transition: 0.2s opacity;
+	margin-bottom: 15px;
+}
 header {
 	background-color: #ffffff;
 	/* padding: 5px;
@@ -124,7 +143,12 @@ selector {
 	width: 85px;
 	vertical-align: middle;
 }
-
+.headercontainer {
+	text-align: inherit;
+}
+.inktankimg {
+	padding-top: 50px;
+}
 nav > ul {
 	list-style-type: none;
 	padding: 0;
@@ -159,6 +183,9 @@ h3 {
 h2 {
 	text-align: center;
 }
+p {
+	text-align: center;
+}
 
 .animation {
 	width: 100%;
@@ -178,6 +205,7 @@ h2 {
 
 #social-icons div {
 	padding-left: 10px;
+	margin-top: 10px;
 }
 
 /* Animation Graphic styling */
@@ -232,7 +260,7 @@ Medium devices (640px and larger)
 	nav {
 		width: auto;
 		float: right;
-		margin-top: 0px;
+		margin-top: 30px;
 	}
 	#hero span {
 		display: block;
@@ -280,6 +308,8 @@ Medium devices (640px and larger)
 
 	.container {
 		padding: 0;
+		text-align: center;
+		max-width: 1200px;
 	}
 
 	p {
@@ -297,10 +327,10 @@ Medium devices (640px and larger)
 		float: left;
 		padding: 10px;
 	}
-	.row: after {
-		content: '';
-		clear: both;
-		display: table;
+	.row::after {
+  content: "";
+  clear: both;
+  display: table;
 	}
 }
 /* ==============================
@@ -309,4 +339,30 @@ Large devices (1024px or larger)
 @media only screen and (min-width: 1024px) {
 	header {
 		text-align: unset;
+		/* padding: 10px 10px 10px; */
+		background-color: #ffffff;
+		/* padding: 5px;
+		margin: 2%; */
+		border: 3px solid #fa9265;
+		position: fixed;
+		width: 100%;
+		box-shadow: 0px 4px 3px 0px rgba(50, 50, 50, 0.5);
+		}
+		.row::after {
+			content: "";
+			clear: both;
+			display: table;
+		}
+		.container {
+  	max-width: 100%;
+  	margin-left: auto;
+  	margin-right: auto;
+		}
+		.profileimg {
+			max-width: 100%;
+		}
+		h1 {
+			display: block;
+		}
+	}
 		/* padding: 20px 0 13px; */
