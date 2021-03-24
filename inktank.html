@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
 	<head>
 		<meta charset="utf-8" />
-		<title>Ink Tank-Logan Boydstun UX Design Portfolio</title>
+		<title>Logan Boydstun UX Design Portfolio</title>
 		<link
 			rel="stylesheet"
 			type="text/css"
@@ -21,14 +21,16 @@
 			rel="stylesheet"
 		/>
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<script src="https://kit.fontawesome.com/0b0548dbd6.js" crossorigin="anonymous"></script>
 	</head>
 
 	<body>
 		<header>
 			<div class="headercontainer">
+				<div class="navtoggle" id="myNavtoggle">
 				<div class="logoWrapper">
 					<img
-						src="./img/logos/lb-green-blue-logo1.png"
+						src="./img/logos/lb-green-blue-logo2x.png"
 						alt="Logan Boydstun Design logo"
 					/>
 				</div>
@@ -37,9 +39,11 @@
 						<li><a href="index.html">Work</a></li>
 						<li><a href="about.html">About</a></li>
 						<li><a href="#contact">Contact</a></li>
+						<li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
 					</ul>
 				</nav>
 			</div>
+		</div>
 		</header>
 
     <main>
@@ -244,5 +248,7 @@
         <p>Copyright Logan Boydstun 2020</p>
       </div>
     </footer>
+		<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<script src="js/scripts.js"></script>
     </body>
     </html>
