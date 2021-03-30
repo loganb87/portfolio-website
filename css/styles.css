@@ -304,8 +304,13 @@ Medium devices (640px and larger)
 		padding: 10px 10px;
 		display: inline-block;
 		width: 100%;
-		padding-top: 125px;
+		padding-top: 100px;
 	}
+
+	main {
+		padding-top: 100px;
+	}
+
 	h1 {
 		margin: 5px;
 		font-size: 2.75em;
@@ -350,7 +355,7 @@ Medium devices (640px and larger)
 	}
 
 	.logoWrapper img {
-		min-width: 641px;
+		min-width: 300px;
 		vertical-align: middle;
 		text-align: left;
 	}
@@ -420,7 +425,7 @@ Large devices (1024px or larger)
 			padding: 10px 10px;
 			display: inline-block;
 			max-width: 1200px;
-			padding-top: 125px;
+			padding-top: 175px;
 		}
 		.button {
 			margin-right: 20px;
@@ -439,6 +444,17 @@ Large devices (1024px or larger)
 
 		.navtoggle li:last-child {
   display: none;
+}
+
+.logoWrapper {
+	padding: 5px;
+	display: inline-block;
+}
+
+.logoWrapper img {
+	min-width: 641px;
+	vertical-align: middle;
+	text-align: left;
 }
 
 		maxwidthWrapper {
