@@ -63,13 +63,13 @@ a:active {
 
 .button {
 	display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
-	background-color: #fa9265;
+	background-color: #508562;
 	color: #ffffff; /* needed to override the default link color */
 	font-weight: 400;
 	text-decoration: none;
 	padding: 10px;
 	border-radius: 3px;
-	border-bottom: 2px solid #994c30; /* width of the border, type, color */
+	border-bottom: 2px solid #67CF8B; /* width of the border, type, color */
 	transition: 0.2s opacity;
 	text-align: center;
 	margin: 5px;
@@ -85,7 +85,7 @@ a:active {
 	text-align: center;
 	padding: 10px;
 	border-radius: 3px;
-	border-bottom: 2px solid #994c30; /* width of the border, type, color */
+	border-bottom: 2px solid #67CF8B; /* width of the border, type, color */
 	transition: 0.2s opacity;
 	margin-bottom: 10px;
 	margin: auto;
@@ -99,7 +99,7 @@ a:active {
 	text-align: center;
 	padding: 10px;
 	border-radius: 3px;
-	border-bottom: 2px solid #994c30; /* width of the border, type, color */
+	border: 2px solid #ffffff; /* width of the border, type, color */
 	transition: 0.2s opacity;
 	margin-bottom: 15px;
 }
@@ -109,7 +109,7 @@ header {
 	margin: 2%; */
 	padding: 10px 0 10px;
 	padding-left: 5px;
-	border: 3px solid #fa9265;
+	border: 3px solid #508562;
 	position: fixed;
 	width: 100%;
 	box-shadow: 0px 4px 3px 0px rgba(50, 50, 50, 0.5);
@@ -128,11 +128,12 @@ selector {
 }
 
 #hero {
-	background-color: #fa9265;
+	background-color: #3482AD;
+	color: #ffffff;
 	padding: 10px 10px;
 	display: inline-block;
 	width: 100%;
-	padding-top: 50px;
+	padding-top: 20px;
 }
 
 #contact {
@@ -216,8 +217,10 @@ h3 {
 h2 {
 	text-align: center;
 }
+
 p {
 	text-align: center;
+	margin: 10px;
 }
 
 .animation {
@@ -285,26 +288,26 @@ Medium devices (640px and larger)
 		background-color: #ffffff;
 		/* padding: 5px;
 		margin: 2%; */
-		border: 3px solid #fa9265;
+		border: 3px solid #508562;
 		position: fixed;
 		width: 100%;
 		box-shadow: 0px 4px 3px 0px rgba(50, 50, 50, 0.5);
 	}
 	nav {
 		width: auto;
-		float: right;
-		margin-top: 30px;
+		text-align: center;
 	}
 	#hero span {
 		display: block;
 		text-align: center;
 	}
 	#hero {
-		background-color: #fa9265;
+		background-color: #3482AD;
+		color: #ffffff;
 		padding: 10px 10px;
 		display: inline-block;
 		width: 100%;
-		padding-top: 100px;
+		padding-top: 150px;
 	}
 
 	main {
@@ -331,7 +334,7 @@ Medium devices (640px and larger)
 	}
 
 	nav > ul {
-		margin: 1em 0;
+		margin: 0px;
 	}
 
 	nav > ul > li > a {
@@ -357,7 +360,11 @@ Medium devices (640px and larger)
 	.logoWrapper img {
 		min-width: 300px;
 		vertical-align: middle;
-		text-align: left;
+		text-align: center;
+	}
+
+	.descWrapper {
+		text-align: center;
 	}
 
 	.container {
@@ -397,11 +404,16 @@ Large devices (1024px or larger)
 		background-color: #ffffff;
 		/* padding: 5px;
 		margin: 2%; */
-		border: 3px solid #fa9265;
+		border: 3px solid #508562;
 		position: fixed;
 		width: 100%;
 		box-shadow: 0px 4px 3px 0px rgba(50, 50, 50, 0.5);
 		}
+
+		img {
+			max-width: 650px;
+		}
+
 		.row::after {
 			content: "";
 			clear: both;
@@ -421,11 +433,12 @@ Large devices (1024px or larger)
 			display: block;
 		}
 		#hero {
-			background-color: #ffffff;
+			background-color: #3482AD;
+			color: #ffffff;
 			padding: 10px 10px;
 			display: inline-block;
 			max-width: 1200px;
-			padding-top: 175px;
+			padding-top: 150px;
 		}
 		.button {
 			margin-right: 20px;
@@ -435,7 +448,12 @@ Large devices (1024px or larger)
 		}
 
 		nav > ul {
-			margin: 1em 0;
+			margin: 0px;
+		}
+
+		nav {
+			width: auto;
+			text-align: left;
 		}
 
 		.navtoggle li:not(:last-child) {
@@ -444,21 +462,25 @@ Large devices (1024px or larger)
 
 		.navtoggle li:last-child {
   display: none;
-}
+	}
 
 .logoWrapper {
 	padding: 5px;
 	display: inline-block;
-}
+	}
 
 .logoWrapper img {
-	min-width: 641px;
+	max-width: 300px;
 	vertical-align: middle;
 	text-align: left;
-}
+	}
 
 		maxwidthWrapper {
 			max-width: 1200px;
+		}
+
+		p {
+			margin: 16px;
 		}
 	}
 		/* padding: 20px 0 13px; */
