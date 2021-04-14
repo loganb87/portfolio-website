@@ -1,41 +1,36 @@
-/*
- * Logan Boydstun Design Web Portfolio Stylesheet
- *
- *508562; 67CF8B; FA9265; 3482AD; 57BFFA
- */
 
 * {
 	box-sizing: border-box;
 }
 
 body {
-	background-color: #ffffff;
-	font-family: 'Montserrat', sans-serif;
-	font-size: 16px; /* Sets the font size to 16px */
-	font-weight: 200; /* Sets the font weight to 300 */
-	line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
-}
-
-h1,
-h2,
-h3,
-h4 {
-	line-height: 1.4;
+background-color: #fff;
+font-family: 'Montserrat', sans-serif;
+font-size: 16px;
+font-weight: 200;
+line-height: 1.6;
 }
 
 h1 {
 	font-size: 2.5em;
 	font-weight: 400;
+	line-height: 1.4;
 }
 
 h2 {
 	font-size: 2.25em;
 	font-weight: 300;
+	line-height: 1.4;
 }
 
 h3 {
 	font-size: 1.5em;
 	font-weight: 200;
+	line-height: 1.4;
+}
+
+h4 {
+	line-height: 1.4;
 }
 
 img {
@@ -49,7 +44,7 @@ li {
 
 a {
 	color: #000000;
-	text-decoration: none; /* No underlining */
+	text-decoration: none;
 }
 
 a:hover {
@@ -57,59 +52,60 @@ a:hover {
 }
 
 a:active {
-	/* selected link */
 	color: #000000;
 }
 
 .button {
-	display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
-	background-color: #508562;
-	color: #ffffff; /* needed to override the default link color */
+	display: inline-block;
+	background-color: #4E815F;
+	color: #fff;
 	font-weight: 400;
 	text-decoration: none;
 	padding: 10px;
 	border-radius: 3px;
-	border-bottom: 2px solid #67CF8B; /* width of the border, type, color */
+	border-bottom: 2px solid #67CF8B;
 	transition: 0.2s opacity;
 	text-align: center;
 	margin: 5px;
 }
+
 .button:hover {
-	opacity: .8;
+	opacity: 0.8;
 }
+
 .emailbutton {
-	display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
-	background-color: #508562;
-	color: #ffffff; /* needed to override the default link color */
+	display: table;
+	background-color: #4E815F;
+	color: #fff;
 	font-weight: 400;
 	text-align: center;
 	padding: 10px;
 	border-radius: 3px;
-	border-bottom: 2px solid #67CF8B; /* width of the border, type, color */
+	border-bottom: 2px solid #67CF8B;
 	transition: 0.2s opacity;
 	margin-bottom: 10px;
 	margin: auto;
 }
+
 .resumebutton {
 	margin: auto;
-	display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
-	background-color: #508562;
-	color: #ffffff; /* needed to override the default link color */
+	display: table;
+	background-color: #4E815F;
+	color: #fff;
 	font-weight: 400;
 	text-align: center;
 	padding: 10px;
 	border-radius: 3px;
-	border: 2px solid #ffffff; /* width of the border, type, color */
+	border: 2px solid #fff;
 	transition: 0.2s opacity;
 	margin-bottom: 15px;
 }
+
 header {
-	background-color: #ffffff;
-	/* padding: 5px;
-	margin: 2%; */
-	padding: 10px 0 10px;
+	background-color: #fff;
+	padding: 10px;
 	padding-left: 5px;
-	border: 3px solid #508562;
+	border: 3px solid #4E815F;
 	position: fixed;
 	width: 100%;
 	box-shadow: 0px 4px 3px 0px rgba(50, 50, 50, 0.5);
@@ -120,7 +116,7 @@ main {
 }
 
 selector {
-	margin: 0 auto; /* No spacing to top and bottom and auto spacing to left and right */
+	margin: 0 auto;
 }
 
 #work {
@@ -128,9 +124,9 @@ selector {
 }
 
 #hero {
-	background-color: #3482AD;
-	color: #ffffff;
-	padding: 10px 10px;
+	background-color: #327DA7;
+	color: #fff;
+	padding: 10px;
 	display: inline-block;
 	width: 100%;
 	padding-top: 20px;
@@ -150,9 +146,11 @@ selector {
 	max-width: 150px;
 	vertical-align: middle;
 }
+
 .headercontainer {
 	text-align: inherit;
 }
+
 .inktankimg {
 	padding-top: 50px;
 }
@@ -204,16 +202,17 @@ nav > ul > li > a:hover {
 }
 
 .row {
-	margin: 25px 0px; /* 25px top and bottom, 0 left and right */
+	margin: 25px 0px;
 }
 
 #hero h1 {
-	text-align: center; /* Centers text */
+	text-align: center;
 }
 
 h3 {
 	text-align: center;
 }
+
 h2 {
 	text-align: center;
 }
@@ -247,9 +246,9 @@ p {
 /* Animation Graphic styling */
 
 @keyframes color-change {
-  0% {fill: #edc655;}
-  50% {fill: #fcffad;}
-  100% {fill: #f76414;}
+  0% {fill: #edc655; }
+  50% {fill: #fcffad; }
+  100% {fill: #f76414; }
 }
 
 .sun {
@@ -257,8 +256,8 @@ p {
 }
 
 @keyframes cloud-move {
-  from {transform: translate(0,50px);}
-  to {transform: translate(200px,50px);}
+  from {transform: translate(0,50px); }
+  to {transform: translate(200px,50px); }
 }
 
 .cloud-front {
@@ -284,27 +283,27 @@ Medium devices (640px and larger)
 @media only screen and (min-width: 640px) {
 	header {
 		text-align: unset;
-		/* padding: 10px 10px 10px; */
-		background-color: #ffffff;
-		/* padding: 5px;
-		margin: 2%; */
+		background-color: #fff;
 		border: 3px solid #508562;
 		position: fixed;
 		width: 100%;
 		box-shadow: 0px 4px 3px 0px rgba(50, 50, 50, 0.5);
 	}
+
 	nav {
 		width: auto;
 		text-align: center;
 	}
+
 	#hero span {
 		display: block;
 		text-align: center;
 	}
+
 	#hero {
 		background-color: #3482AD;
-		color: #ffffff;
-		padding: 10px 10px;
+		color: #fff;
+		padding: 10px;
 		display: inline-block;
 		width: 100%;
 		padding-top: 150px;
@@ -319,15 +318,13 @@ Medium devices (640px and larger)
 		font-size: 2.75em;
 		font-weight: 400;
 	}
+
 	h2 {
 		margin: 8px;
 		margin-top: 14px;
 		text-align: center;
 	}
-	/* header {
-		width: 96%;
-		margin: 1%;
-	} */
+
 	li {
 		font-size: 2em;
 		font-weight: 300;
@@ -376,18 +373,22 @@ Medium devices (640px and larger)
 	p {
 		display: inline-block;
 	}
+
 	.center {
 		display: flex;
 		justify-content: center;
 		align-items: center;
 	}
+
 	.col-md-6 {
 		width: 50%;
 	}
+
 	[class*='col-'] {
 		float: left;
 		padding: 10px;
 	}
+
 	.row::after {
   content: "";
   clear: both;
@@ -400,10 +401,7 @@ Large devices (1024px or larger)
 @media only screen and (min-width: 1024px) {
 	header {
 		text-align: unset;
-		/* padding: 10px 10px 10px; */
-		background-color: #ffffff;
-		/* padding: 5px;
-		margin: 2%; */
+		background-color: #fff;
 		border: 3px solid #508562;
 		position: fixed;
 		width: 100%;
@@ -434,10 +432,10 @@ Large devices (1024px or larger)
 		}
 		#hero {
 			background-color: #3482AD;
-			color: #ffffff;
-			padding: 10px 10px;
+			color: #fff;
+			padding: 10px;
 			display: inline-block;
-			max-width: 1200px;
+			width: 100%;
 			padding-top: 150px;
 		}
 		.button {
@@ -464,18 +462,18 @@ Large devices (1024px or larger)
   display: none;
 	}
 
-.logoWrapper {
+	.logoWrapper {
 	padding: 5px;
 	display: inline-block;
 	}
 
-.logoWrapper img {
+	.logoWrapper img {
 	max-width: 300px;
 	vertical-align: middle;
 	text-align: left;
 	}
 
-		maxwidthWrapper {
+		maxwidthwrapper {
 			max-width: 1200px;
 		}
 
@@ -483,4 +481,3 @@ Large devices (1024px or larger)
 			margin: 16px;
 		}
 	}
-		/* padding: 20px 0 13px; */
