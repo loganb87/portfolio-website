@@ -427,9 +427,11 @@ Large devices (1024px or larger)
 		.profileimg {
 			max-width: 100%;
 		}
+
 		h1 {
 			display: block;
 		}
+		
 		#hero {
 			background-color: #3482AD;
 			color: #fff;
@@ -438,6 +440,7 @@ Large devices (1024px or larger)
 			width: 100%;
 			padding-top: 150px;
 		}
+
 		.button {
 			margin-right: 20px;
 		}
