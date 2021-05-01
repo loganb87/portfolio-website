@@ -152,7 +152,7 @@ selector {
 }
 
 .inktankimg {
-	padding-top: 50px;
+	padding-top: 25px;
 }
 
 nav > ul {
@@ -293,6 +293,7 @@ Medium devices (640px and larger)
 	nav {
 		width: auto;
 		text-align: center;
+		font-size: .8rem;
 	}
 
 	#hero span {
@@ -306,7 +307,7 @@ Medium devices (640px and larger)
 		padding: 10px;
 		display: inline-block;
 		width: 100%;
-		padding-top: 150px;
+		padding-top: 85px;
 	}
 
 	main {
@@ -355,7 +356,7 @@ Medium devices (640px and larger)
 	}
 
 	.logoWrapper img {
-		min-width: 300px;
+		min-width: 200px;
 		vertical-align: middle;
 		text-align: center;
 	}
@@ -418,14 +419,18 @@ Large devices (1024px or larger)
 			display: table;
 		}
 
+		main {
+			margin: auto;
+			max-width: 800px;
+		}
+
 		.container {
-  	max-width: 1200px;
-  	margin-left: auto;
-  	margin-right: auto;
+  	max-width: 800px;
+  	margin: auto;
 		}
 
 		.profileimg {
-			max-width: 100%;
+			max-width: 800px;
 		}
 		h1 {
 			display: block;
@@ -435,14 +440,13 @@ Large devices (1024px or larger)
 			color: #fff;
 			padding: 10px;
 			display: inline-block;
-			width: 100%;
-			padding-top: 150px;
+			padding-top: 50px;
 		}
 		.button {
 			margin-right: 20px;
 		}
 		svg.berlin-illustration {
-			max-width: 1200px;
+			max-width: 800px;
 		}
 
 		nav > ul {
@@ -451,7 +455,8 @@ Large devices (1024px or larger)
 
 		nav {
 			width: auto;
-			text-align: left;
+			font-size: .8rem;
+			padding: 0px;
 		}
 
 		.navtoggle li:not(:last-child) {
@@ -459,7 +464,12 @@ Large devices (1024px or larger)
 		}
 
 		.navtoggle li:last-child {
-  display: none;
+  	display: none;
+		}
+
+	.navtoggle {
+		display: flex;
+		justify-content: space-between;
 	}
 
 	.logoWrapper {
@@ -468,14 +478,10 @@ Large devices (1024px or larger)
 	}
 
 	.logoWrapper img {
-	max-width: 300px;
+	max-width: 240px;
 	vertical-align: middle;
 	text-align: left;
 	}
-
-		maxwidthwrapper {
-			max-width: 1200px;
-		}
 
 		p {
 			margin: 16px;
